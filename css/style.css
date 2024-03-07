@@ -5,11 +5,12 @@
     box-sizing: border-box;
     font-family: "SF-Pro-Text-Regular";
 }
+/*Menu Movil*/
 .menu{
     background: var(--color-secundary);
-    width: 100%;
-    bottom: 0;
     position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 .menu ul{
     width: 100%;
@@ -19,7 +20,7 @@
     justify-content: space-around;
     align-items: center;
 }
-.menu ul li{
+.menu ul li {
     list-style: none;
 }
 .menu ul li a{
@@ -33,3 +34,4 @@
     color: var(--color-primary);
     transition: color .3s ease-in-out;
 }
+/* *************************************** */
