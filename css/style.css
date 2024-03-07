@@ -1,7 +1,49 @@
 @import url(variables.css);
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "SF-Pro-Text-Regular";
 }
+/*Encabezado del aplicativo*/
+.header {
+    display: grid;
+    /* background: red; */
+    padding: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+        "logo burger";
+        color: var(--color-secundary);
+}
+
+.logo,
+.burger {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    grid-area: logo;
+    gap: 10px;
+}
+
+.logo h1 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: "SF-Pro-Text-Bold";
+}
+
+.burger {
+    grid-area: burger;
+    justify-content: flex-end;
+}
+
+.logo i,
+.burger i {
+    font-size: 24px;
+}
+/* ********************************************* */
