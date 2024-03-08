@@ -1,7 +1,219 @@
 @import url(variables.css);
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "SF-Pro-Text-Regular";
 }
+/*Encabezado del aplicativo*/
+.header {
+    display: grid;
+    /* background: red; */
+    padding: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+        "logo burger";
+        color: var(--color-primary);
+}
+
+.logo,
+.burger {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    grid-area: logo;
+    gap: 10px;
+}
+
+.logo h1 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: "SF-Pro-Text-Bold";
+}
+
+.burger {
+    grid-area: burger;
+    justify-content: flex-end;
+}
+
+.logo i,
+.burger i {
+    font-size: 24px;
+}
+/* ********************************************* */
+/* ************************************************ */
+.container{
+    /* background: blue; */
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding: 10px;
+    grid-gap: 25px
+
+    
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    /* background: olivedrab; */
+    gap: 15px
+}
+.banner__title{
+    /* background: darkgoldenrod; */
+    padding: 10px;
+}
+
+.banner__title{
+    font-size: 1.4rem;
+    color: var(--color-secundary);
+    text-transform: capitalize;
+  
+}
+.banner__publicidad{
+    width: 100%;
+    height: 140px;
+    /* background: #00388b; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .banner__logo{
+    /* background: greenyellow; 
+} **/
+.banner__logo img{
+    /* padding: 15px; */
+    height: 130px;
+}
+.banner__card{
+    width: 92vw;
+    height: 130px;
+    background: var(--color-ternario);
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: var(--color-shado-tranparent);
+}
+.banner__data{
+    width: 80%;
+    /* background: orange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    text-align: center;
+    position: relative;
+}
+.banner__data strong{
+    font-family: "SF-Pro-Text-Bold";
+}
+.banner__data small{
+    font-family: "SF-Pro-Text-Regular";
+}
+.banner__close{
+    position: absolute;
+    background: var(--color-primary);
+    border: none;
+    color: var(--color-ternario);
+    width: 25px;
+    height: 25px;
+    top: 5px;
+    right: 10px;
+    border-radius: 100%;
+    margin-top: 7px;
+    margin-right: 3px;
+}
+.banner__more{
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: "SF-Pro-Text-Bold";
+    font-size: .8rem;
+    color: var(--color-ternario);
+    padding: 5px;
+    background: var(--color-primary);
+}
+
+/* ************************************************ */
+[data-card]::before{
+    content: attr(data-card);
+    color: var(--color-primary);
+    font-family: "SF-Pro-Text-Bold";
+}
+.carusel__title h3{
+    color: var(--color-secundary);
+}
+
+.carusel__card{
+    width: 95vw;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    margin: auto;
+    align-items: center;
+    gap: 5px;
+    margin: 15px 0;
+}
+.carusel__img{
+    min-width: 55%;
+    min-height: 40vh;
+    background: url(../storage/img/card.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-ternario);
+}
+.carusel__img small,
+.carusel__img img{
+    position: absolute;
+}
+.carusel__img small{
+    top: 20px;
+    right: 20px;
+}
+
+.carusel__img img{
+    left: 20px;
+    bottom: 20px;
+}
+
+/*Menu Movil*/
+.menu{
+    background: var(--color-secundary);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.menu ul{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu ul li {
+    list-style: none;
+}
+.menu ul li a{
+    text-decoration: none;
+}
+.menu ul li a i{
+    font-size: 25px;
+    color: var(--color-icon);
+}
+.menu ul li a i:hover{
+    color: var(--color-primary);
+    transition: color .3s ease-in-out;
+}
+/* *************************************** */

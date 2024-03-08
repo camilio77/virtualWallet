@@ -1,6 +1,6 @@
 <svg width="400" height="622" viewBox="0 0 400 622" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_202_158)">
-<rect width="400" height="622" rx="40" fill="#33404F"/>
+<g clip-path="url(#clip0_11_208)">
+<rect width="400" height="622" rx="40" fill="#414F33"/>
 <circle opacity="0.1" cx="314" cy="55" r="161" fill="white"/>
 <circle opacity="0.1" cx="5.5" cy="23.5" r="55.5" fill="white"/>
 <circle opacity="0.1" cy="272" r="114" fill="white"/>
@@ -21,7 +21,7 @@
 <path d="M52.089 77.465L40 68.125V89.84H52.089V77.465Z" fill="white"/>
 </g>
 <defs>
-<clipPath id="clip0_202_158">
+<clipPath id="clip0_11_208">
 <rect width="400" height="622" rx="40" fill="white"/>
 </clipPath>
 </defs>
