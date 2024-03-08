@@ -7,8 +7,8 @@
     src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-Bold.otf);
 }
 :root{
-    --color-primary: #8CA850;
-    --color-secundary: #414F33;
+    --color-primary: #8E16C7;
+    --color-secundary: #3C1068;
     --color-ternario: #fff;
     --color-shado-tranparent: 0px 0px 10px rgba(0, 0, 0, 0.216);
     --color-icon: #fff;
