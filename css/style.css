@@ -5,3 +5,246 @@
     box-sizing: border-box;
     font-family: "SF-Pro-Text-Regular";
 }
+
+.banner{
+    z-index: -10;
+    width: 100%;
+    height: 100vh;
+    background: var(--color-secundary);
+    position: absolute;
+}
+
+.banner img{
+    width: 100%;
+    object-fit: fill;
+}
+/* ********************************** */
+.profile{
+  
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0px;
+    gap: 20px;
+}
+
+.profile__activities{
+    background: var(--color-ternario);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 30px 20px;
+    bottom: 50px;
+    height: 100vh;
+}
+
+.profile__balance{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+
+.profile__titule{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-transform:  capitalize;
+    color: var(--color-ternario);
+}
+.profile__titule h3{
+    font-size: 2.2em;
+    font-family: "SF-Pro-Text-Heavy.otf";
+}
+
+.profile__titule p{
+    font-size: 2.1em;
+    font-family: "SF-Pro-Text-Regular";
+}
+
+.profile__process{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    color: var(--color-ternario);
+}
+
+.profile__savings, .profile__assets{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.profile__savings small,
+.profile__assets small{
+    text-transform: uppercase;
+    font-size: .8em;
+    margin-bottom: 5px;
+}
+
+.profile__savings label,
+.profile__assets label{
+    font-family: "SF-Pro-Text-Semibold";
+    font-size: 1.3em;
+}
+
+.profile__savings progress,
+.profile__assets progress{
+    width: 100%;
+}
+
+.profile__savings progress[value] {
+    --color: var(--color-primary);
+    --background: var(--color-ternario);
+    background: var(--background);
+}
+
+.profile__assets progress[value] {
+    --color: var(--color-cuarto);
+    --background: var(--color-ternario);
+    background: var(--background);
+}
+
+progress[value] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    height: .5em;
+    border-radius: 10em;
+}
+
+.profile__savings progress[value]::-webkit-progress-bar,
+.profile__assets progress[value]::-webkit-progress-bar {
+    border-radius: 10em;
+    height: .5em;
+    background: var(--background);
+}
+
+progress[value]::-webkit-progress-value {
+    border-radius: 10em;
+    background: var(--color);
+}
+
+progress[value]::-moz-progress-bar {
+    border-radius: 10em;
+    background: var(--color);
+}
+
+*************************************************************************
+.activities__title h3, .transactions__title h3{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    font-family: "SF-pro-Text-Bold";
+    color: var(--color-secundary);
+}
+
+.activities__carusel__card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.activities__carusel__img {
+    min-width: 30%;
+    min-height: 14vh;
+    background: var(--color-ternario);
+    box-shadow: var(--color-shadow-transparent);
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-secundary);
+    margin: 15px 0;
+    transition: .3s ease;
+}
+.activities__carusel__img:hover{
+    border: 2px solid var(--color-primary);
+    scale: 1.1;
+}
+
+.activities__carusel__img small,
+.activities__carusel__img h4 {
+    position: absolute;
+}
+
+.activities__carusel__img i {
+    font-size: 2.5em;
+}
+
+.activities__carusel__img h4 {
+    bottom: 20px;
+}
+
+/* ***************************************************************** */
+
+
+.transactions{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.transactions__balance{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 55vh;
+    overflow-y: scroll;
+}
+
+.transactions__carucel{
+    color: var(--color-secundary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transactions__description{
+    color: var(--color-secundary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.transactions__up,
+.transactions__down{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 40px;
+    color: var(--color-primary);
+}
+
+.transactions__down{
+    color: var(--color-secundary);
+}
+
+.transactions__description i{
+    font-size: 1.8em;
+}
+
+
+
+.transactions__description div p,
+.transactions__value p{
+    font-family: "SF-Pro-Text-Semibold";
+    text-transform: capitalize;
+    
+}
+
+.transactions__description div small,
+.transactions__value small{
+    color: var(--color-cuarto);
+    font-family: "SF-Pro-Text-Light";
+    text-transform: capitalize;
+}
